@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Open+Sans:wght@300;400&family=Poppins&family=Russo+One&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Russo One", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 32%;
+  margin: 20px;
+}
+/* Start Header */
+header {
+  width: 100%;
+  height: 150px;
+  background-image: linear-gradient(to right, #ec4a22fa 49% , #ec4a227d),
+   url("../images/play_2.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+  border-radius: 5px;
+}
+/* End Header */
+
+/* Start responsive_email */
+.responsive_email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive_email .email {
+    color: white;
+    background-color: #122333;
+    padding: 20px;
+    margin-left: -14px;
+    margin-top: -130px;
+    border-radius: 5px;
+}
+
+.responsive_email .email h4 {
+    margin-bottom: 10px;
+    max-width: 50px;
+    line-height: 1.3;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.responsive_email .email h4::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #ed4c21;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: -5px;
+}
+
+.responsive_email .email ul {
+    list-style: none;
+    width: 135px;
+   
+}
+
+.responsive_email .email ul li {
+    font-size: 12px;
+    margin: 10px;
+    margin-top: 15px;
+    
+}
+
+.responsive_email .email ul li span {
+    margin-left: -15px;
+    margin-right: 5px;
+    color: #74a53c;
+}
+
+.responsive_email .email input {
+    padding: 8px;
+    color: white;
+    background-color: #ed4c21;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    margin: 10px;
+    margin-left: -5px;
+}
+
+.responsive_email p {
+    padding: 12px;
+    margin: 15px;
+    border: 1px solid #ed4c21;
+    max-width: 180px;
+    font-size: 10px;
+    line-height: 1.4;
+    margin-left: 25px;
+}
+
+/* End responsive_email */
+/* Start Middle */
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.middle div {
+    background-color: #f2f8fa;
+    margin: 10px 0;
+    padding: 20px;
+    padding-top: 55px;
+    position: relative;
+    counter-increment: count;
+}
+
+.middle .mailchip,
+.middle .mymail {
+    margin-right: 17px;
+}
+
+.middle div::before {
+    content: '0' counter(count);
+    position: absolute;
+    top: 30px;
+    color: #ed4c21;
+    font-weight: 500;
+}
+
+.middle p:first-child {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.middle p:nth-child(2) {
+    font-size: 11px;
+    color: #7b7b7b;
+    line-height: 1.4;
+}
+
+.middle p:nth-child(3) {
+    font-size: 10px;
+    color: #ed4c21;
+    margin: 15px 0;
+}
+
+.middle p span {
+    font-size: 6px;
+}
+/* End Middle */
+/* Start Footer */
+.footer {
+    background-image: linear-gradient(to right, #243139ed, #243139d4),
+    url("../images/street.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+}
+
+.footer h5 {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.footer h5::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #ed4c21;
+    top: 28px;
+    left: 0;
+
+}
+
+.footer img {
+    width: 180px;
+    height: 180px;
+}
+
+.footer p {
+    font-size: 11px;
+    line-height: 1.4;
+    padding-right: 15px;
+}
+
+.footer input {
+    text-transform: capitalize;
+    padding: 8px;
+    color: white;
+    background-color: #ed4c21;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    margin: 10px;
+    margin-left: -5px;
+}
+/* End Footer */
